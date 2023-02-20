@@ -15,7 +15,8 @@ class SppController extends Controller
     public function index()
     {
         //
-        return view('spp.index');
+        $spp = Spp::all();
+        return view('spp.index', compact('spp'));
     }
 
     /**
@@ -66,6 +67,8 @@ class SppController extends Controller
     public function show(Spp $spp)
     {
         //
+        $spps = Spp::find($spp->id);
+        return view('spp.show', compact('spps'));
     }
 
     /**
@@ -77,6 +80,8 @@ class SppController extends Controller
     public function edit(Spp $spp)
     {
         //
+        $spps = Spp::find($spp->id);
+        return view('spp.edit', compact('spps'));
     }
 
     /**

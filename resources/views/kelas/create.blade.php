@@ -8,28 +8,38 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Kelas</h3>
+                <h3 class="card-title">Tambah Data Kelas</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="{{ route('spp.store') }}" method="POST">
+              <form action="{{ route('kelas.store') }}" method="POST">
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">nama_kelas</label>
-                    <input type="varchar {{ (10) }}" value="{{ old('nama_kelas') }}" name="nama_kelas" class="form-control" id="exampleInputEmail1" placeholder="Enter Kelas">
+                  <label>Nama Kelas</label>
+                <select class="form-control" name="kelas_id" id="">
+                 <option disable selected> --Silahkan Pilih Kelas-- </option>
+                 <option value="RPL">RPL</option>
+                 <option value="TKJ">TKJ</option>
+                 <option value="TBSM">TBSM</option>
+                 <option value="TKRO">TKRO</option>
+                 <option value="DPIB">DPIB</option>
+                 <option value="TEI">TEI</option>
+                 <option value="TP">TP</option>
+                </select>
                   </div>
-                  @error('nama_kelas')
-                  <div class="alert alert-danger" role="alert">{{ $message }}</div>
-                  @enderror
                   <div class="form-group">
-                    <label for="exampleInputPassword1">kompetensi_keahlian</label>
-                    <input type="varchar {{ (50) }}" value="{{ old('kompetensi_keahlian') }}" name="kompetensi_keahlian" class="form-control" id="exampleInputPassword1" placeholder="Enter kompetensi_keahlian">
+                  <label>Kompetensi Keahlian</label>
+                <select class="form-control" name="kompetensi_keahlian" id="kompetensi keahlian">
+                 <option disabled selected>Silahkan Kompetensi Keahlian</option>
+                 <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                 <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
+                 <option value="Teknik Berbasis Sepeda Motor">Teknik Berbasis Sepeda Motor</option>
+                 <option value="Teknik Kendaran Ringan Otomotif">Teknik Kendaraan Ringan Otomotif</option>
+                 <option value="Desain Pembangunan IB">Desain Pembangunan IB</option>
+                 <option value="Teknik Elektronika">Teknik Elektronika</option>
+                 </select>
                   </div>
-                  @error('kompetensi_keahlian')
-                  <div class="alert alert-danger" role="alert">{{ $message }}</div>
-                  @enderror
-                </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
@@ -38,5 +48,4 @@
               </form>
             </div>
             <!-- /.card -->
-
 @endsection
