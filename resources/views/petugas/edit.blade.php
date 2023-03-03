@@ -17,6 +17,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="input_petugas">Nama Petugas</label>
+                    <a href="{{ route('petugas.update', $users->id) }}">aaa</a>
                     <input type="text" name="nama_petugas" class="form-control" id="input_petugas" value="{{ $users->nama_petugas }}"placeholder="Silahkan Masukan Petugas">
                   </div>
                   <div class="form-group">

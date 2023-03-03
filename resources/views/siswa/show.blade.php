@@ -59,9 +59,9 @@
          <tr>
           <td>{{ $loop->iteration }}</td>
           <td>{{ $pembayaran->tgl_bayar }}</td>
-          <td>{{ $pembayaran->bulan_dibayar }}</td>
+          <td>{{ $pembayaran->bulan_bayar }}</td>
           <td>{{ $pembayaran->tahun_dibayar }}</td>
-          <td>{{ $pembayaran->jumlah_dibayar }}</td>
+          <td>{{ $pembayaran->jumlah_bayar }}</td>
 </td>
             @csrf
           </form>

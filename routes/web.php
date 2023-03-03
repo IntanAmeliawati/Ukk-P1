@@ -26,7 +26,7 @@ use App\Http\Controllers\PembayaranController;
 //     return view('welcome');
 // });
 
-Route::view('/', 'welcome');
+Route::view('/', 'home');
 
 Route::resource('user', usercontroller::class);
 
@@ -54,7 +54,7 @@ Route::middleware(['auth', 'level:admin'])->group(function () {
         Route::put('kelas/{kelas}', 'update')->name('kelas.update');
         Route::delete('kelas/{kelas}', 'destroy')->name('kelas.destroy');
     });
-    Route::controller(Usercontroller::class)->group(function() {
+    Route::controller(usercontroller::class)->group(function() {
         Route::get('petugas', 'index')->name('petugas.index');
         Route::get('petugas/create', 'create')->name('petugas.create');
         Route::post('petugas', 'store')->name('petugas.store');

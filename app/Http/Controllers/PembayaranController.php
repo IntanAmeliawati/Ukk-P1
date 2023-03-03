@@ -53,18 +53,18 @@ class PembayaranController extends Controller
         // dd($request);
         $request->validate([
             'tgl_bayar' => 'required',
-            'bulan_dibayar' => 'required',
+            'bulan_bayar' => 'required',
             'tahun_dibayar' => 'required',
             'jumlah_dibayar' => 'required'
         ]);
         Pembayaran::create([
-            'users_id'  => Auth::user()->id,
+            'user_id'  => Auth::user()->id,
             'siswa_id' =>  $siswa->id,
             'spps_id'   =>  $siswa->spps_id,
             'tgl_bayar' => $request->tgl_bayar,
-            'bulan_dibayar' => $request->bulan_dibayar,
+            'bulan_bayar' => $request->bulan_bayar,
             'tahun_dibayar' => $request->tahun_dibayar,
-            'jumlah_dibayar'=> $request->jumlah_dibayar,
+            'jumlah_bayar'=> $request->jumlah_dibayar,
         ]);
         return redirect()->route('siswa.show',$siswa->id);
     }

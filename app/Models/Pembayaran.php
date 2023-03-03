@@ -10,17 +10,17 @@ class Pembayaran extends Model
     use HasFactory;
     protected $table = 'pembayarans';
     protected $fillable = [
-        'users_id',
-        'siswas_id',
+        'user_id',
+        'siswa_id',
         'spps_id',
-        'tgl_pembayaran',
+        'tgl_bayar',
         'bulan_bayar',
-        'tahun_bayar',
+        'tahun_dibayar',
         'jumlah_bayar'
     ];
     public function user()
     {
-        return $this->belongsTo('App\Models\User', 'id', 'users_id');
+        return $this->belongsTo('App\Models\User', 'id', 'kelas_id');
     
     }
     public function siswa()
@@ -28,9 +28,9 @@ class Pembayaran extends Model
         return $this->belongsTo('App\Models\Siswa', 'id', 'siswa_id');
 
     }
-    public function spps()
+    public function spp()
     {
-    return $this->belongsTo('App\Models\Spps', 'id', 'spps_id');
+    return $this->belongsTo('App\Models\Kelas', 'id', 'kelas_id');
     
     }
 

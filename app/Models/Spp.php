@@ -14,9 +14,9 @@ class Spp extends Model
        'nominal'
     ];
 
-    public function siswa()
+    public function kelas()
     {
-       return $this->hasMany('App\Models\Kelas', 'id', 'kelas_id');
+       return $this->belongsTo('App\Models\Kelas', 'id', 'kelas_id');
     }
     public function pembayaran()
 {

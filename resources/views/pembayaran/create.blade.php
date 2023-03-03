@@ -24,7 +24,7 @@ c
                   </div>
                   <div class="form-group">
                   <label>Bulan bayar</label>
-                <select class="form-control" name="bulan_dibayar" id="bulan_dibayar" >
+                <select class="form-control" name="bulan_bayar" id="bulan_dibayar" >
                     <option disabled selected>-Pilih bulan-</option>
                     <option value="Januari">Januari</option>
                     <option value="Februari">Februari</option>
