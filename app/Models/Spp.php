@@ -16,11 +16,11 @@ class Spp extends Model
 
     public function siswa()
     {
-       return $this->hasMany('App\Models\Siswa');
+       return $this->hasMany('App\Models\Kelas', 'id', 'kelas_id');
     }
     public function pembayaran()
 {
-    return $this ->hasMany('App\Models\Pembayaran');
+    return $this ->hasMany('App\Models\Pembayarans');
 }
 
 }

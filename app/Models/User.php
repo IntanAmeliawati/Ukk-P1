@@ -19,8 +19,9 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'nama_petugas',
-        'email',
+        'username',
         'password',
+        'level'
     ];
 
     /**
@@ -41,9 +42,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    
     public function pembayaran()
     {
-        return $this ->hasMany('App\Models\Pembayaran');
+        return $this->hasMany('App\Models\pembayaran');
     }
 }

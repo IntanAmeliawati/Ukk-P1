@@ -20,11 +20,11 @@ class Siswa extends Model
     ];
     public function Kelas()
     {
-        return $this->belongsTo('App\Models\Kelas', 'id', 'kelas_id');
+        return $this->belongsTo('App\Models\Kelas', 'kelas_id', 'id');
     }
     public function spp()
     {
-        return $this->belongsTo('App\Models\Kelas', 'id', 'kelas_id');
+        return $this->belongsTo('App\Models\Spp', 'spps_id', 'id');
     }
     public function pembayaran()
 {
