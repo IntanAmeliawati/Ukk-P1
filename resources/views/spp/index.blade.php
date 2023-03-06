@@ -36,18 +36,18 @@
         </tr>
         </thead>
         <tbody>
-          @forelse($spp as $spp)
+          @forelse($spps as $spps)
          <tr>
           <td>{{ $loop->iteration }}</td>
-          <td>{{ $spp->tahun }}</td>
-          <td>{{ $spp->nominal }}</td>
+          <td>{{ $spps->tahun }}</td>
+          <td>{{ $spps->nominal }}</td>
           <td>
-          <form action="{{ route ('spp.destroy', [$spp->id])}}" method="POST">
-              <a class="btn btn-info mr-3" href="spp/{{$spp->id}}">
+          <form action="{{ route ('spp.destroy', [$spps->id])}}" method="POST">
+              <a class="btn btn-info mr-3" href="spp/{{$spps->id}}">
               <i class="fas fas fa-exclamation-circle"></i> Detail</a> 
-              <a class="btn btn-warning mr-3" href="spp/{{$spp->id}}/edit">
+              <a class="btn btn-warning mr-3" href="spp/{{$spps->id}}/edit">
               <i class="fas fa-edit	"></i> Edit</a>
-              <form action="/spp/{{$spp->id}}" method="POST">
+              <form action="/spp/{{$spps->id}}" method="POST">
             @csrf
             @method('DELETE')
            <button type="submit" class="btn btn-danger" value="Delete">

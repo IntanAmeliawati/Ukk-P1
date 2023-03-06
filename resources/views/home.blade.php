@@ -1,577 +1,137 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Your description">
+        <meta name="author" content="Your name">
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
-<html lang="zxx">
+        <!-- Webpage Title -->
+        <title>Pembayaran Spp</title>
+        
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="{{ asset('cedo/web/css/bootstrap.css') }}" rel="stylesheet">
+        <link href="{{ asset('cedo/web/css/fontawesome-all.css') }}" rel="stylesheet">
+        <link href="{{ asset('cedo/web/css/swiper.css') }}" rel="stylesheet">
+        <link href="{{ asset('cedo/web/css/magnific-popup.css') }}" rel="stylesheet">
+        <link href="{{ asset('cedo/web/css/styles.css') }}" rel="stylesheet">
+        
+        <!-- Favicon  -->
+        <link rel="icon" href="{{ asset('cedo/web/images/favico.png') }}">
+    </head>
+    <body data-spy="scroll" data-target=".fixed-top">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container">
+                
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
-<head>
-  <meta charset="utf-8">
-  <title>Agen | Bootstrap Agency Template</title>
+                <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!-- theme meta -->
-  <meta name="theme-name" content="agen" />
-  
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="{{ asset('template/source/plugins/bootstrap/bootstrap.min.css') }}">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="{{ asset('template/source/plugins/slick/slick.css') }}">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="{{ asset('template/source/plugins/themify-icons/themify-icons.css') }}">
-  <!-- venobox css -->
-  <link rel="stylesheet" href="{{ asset('template/source/plugins/venobox/venobox.css') }}">
-  <!-- card slider -->
-  <link rel="stylesheet" href="{{ asset('template/source/plugins/card-slider/css/style.css') }}">
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="{{ route('login.proses') }}">Login <span class="sr-only">(current)</span></a>
+                        </li>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
 
-  <!-- Main Stylesheet -->
-  <link href="{{ asset('template/source/css/style.css') }}" rel="stylesheet">
-  
-  <!--Favicon-->
-  <link rel="shortcut icon" href="{{ asset('template/source/images/favicon.ico') }}" type="image/x-icon">
-  <link rel="icon" href="{{ asset('template/source/mages/favicon.ico') }}" type="image/x-icon">
 
-</head>
+        <!-- Header -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1 class="h1-large">Aplikasi Pembayaran Spp</h1>
+                            <p class="p-large"></p>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of div -->
+                    <div class="col-lg-6">
+                            </div>
+                        </form>     
+                        <!-- end of get quote form -->
 
-<body>
-  
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+            <div class="image-container">
+                <img class="img-fluid" src="{{ asset('cedo/web/images/header.svg') }}" alt="alternative">
+            </div> <!-- end of image-container -->
+            <svg class="frame-decoration" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 282.476"><defs><style>.cls-1{fill:#7f2778;}</style></defs><title>frame-decorative</title><path class="cls-1" d="M0,34.134S305.408-64.19,689.732,72.915c223.7,79.8,438.268,102.561,598.78,46.341C1439.19,66.481,1684.854,39.793,1920,123.939V282.476H0V34.134Z"/></svg>
+        </header> <!-- end of header -->
+        <!-- end of header -->
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="index.html"><img src="{{ asset('template/source/images/logo.png') }}" alt="Egen"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="team.html">Team</a>
-            <a class="dropdown-item" href="team-single.html">Team Details</a>
-            <a class="dropdown-item" href="career.html">Career</a>
-            <a class="dropdown-item" href="career-single.html">Career Details</a>
-            <a class="dropdown-item" href="blog-single.html">Blog Details</a>
-            <a class="dropdown-item" href="pricing.html">Pricing</a></a>
-            <a class="dropdown-item" href="faqs.html">FAQ's</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+        <!-- Approval -->
+        <div class="basic-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="h2-heading"></h2>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled li-space-lg first">
+                            <li class="media">
+                                <div class="circle">1</div>
+                                <div class="media-body">
+                                    <h5>Konsep Dasar Pembayaran SPP</h5>
+                                    <p>SPP merupakan iuran rutin sekolah yang mana pembayarannya dilakukan setiap sebulan sekali. SPP merupakan salah satu bentuk kewajiban setiap siswa yang masih aktif disekolah tersebut. Dana iuran bulanan tersebut akan dialokasikan oleh sekolah yang bersangkutan untuk membiayai berbagai keperluan atau kebutuhan sekolah supaya kegiatan belajar mengajar disekolah dapat berjalan lancar dengan adanya bantuan dari dana iuran tersebut.</p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="circle">2</div>
+                                <div class="media-body">
+                                    <h5> Manajemen Keuangan Sekolah</h5>
+                                    <p>Setiap unit kerja selalu berhubungan dengan masalah keuangan, demikian pula sekolah. Persoalan yang menyangkut keuangan sekolah pada garis besarnya berkisar pada uang Sumbangan Pembinaan Pendidikan SPP, uang kesejahteraan personel dan gaji serta keuangan yang berhubungan langsung dengan penyelenggaraan sekolah seperti perbaikan sarana dan sebagainya</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled li-space-lg second">
+                            <li class="media">
+                                <div class="circle">3</div>
+                                <div class="media-body">
+                                    <h5>Pembayaran SPP</h5>
+                                    <p>SPP dimaksudkan untuk membantu pembinaan pendidikan, penyelengaraan sekolah, kesejahteraan personel, perbaikan sarana dan kegiatan supervisi
+                                    Yang dimaksud penyelenggaraan sekolah ialah : 1. Pengadaan alat bantu atau bahan pelajaran 2. Pengadaan alat atau bahan manajemen 3. Penyelenggaraan ulangan, evaluasi belajar, kartu pribadi, raport dan STTB 4. Pengadaan perpustakaan sekolah 5. Prakarya dan pelajaran praktek 18
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 -->
+        <!-- end of approval -->
 
-<!-- banner -->
-<section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
-  data-background="images/banner/banner2.jpg">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="display-1 text-white font-weight-bold font-primary">Creative Agency</h1>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /banner -->
-
-<!-- service -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h2 class="section-title">Our Services</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p>
-        <div class="section-border"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <div class="card hover-bg-secondary shadow py-4 active">
-          <div class="card-body text-center">
-            <div class="position-relative">
-              <i
-                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-palette mb-5 d-inline-block text-white"></i>
-              <i class="icon-lg icon-watermark text-white ti-palette"></i>
-            </div>
-            <h4 class="mb-4">Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <div class="card hover-bg-secondary shadow py-4">
-          <div class="card-body text-center">
-            <div class="position-relative">
-              <i
-                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-dashboard mb-5 d-inline-block text-white"></i>
-              <i class="icon-lg icon-watermark text-white ti-dashboard"></i>
-            </div>
-            <h4 class="mb-4">Development</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4 mb-lg-0">
-        <div class="card hover-bg-secondary shadow py-4">
-          <div class="card-body text-center">
-            <div class="position-relative">
-              <i
-                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-announcement mb-5 d-inline-block text-white"></i>
-              <i class="icon-lg icon-watermark text-white ti-announcement"></i>
-            </div>
-            <h4 class="mb-4">Marketing</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /service -->
-
-<!-- feature -->
-<section class="section bg-secondary position-relative">
-  <div class="bg-image overlay-secondary">
-    <img src="images/feature.jpg" alt="bg-image">
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xl-9 mx-auto">
-        <div class="row align-items-center">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <img src="images/feature.jpg" alt="feature-image" class="img-fluid">
-          </div>
-          <div class="col-lg-7 offset-lg-1">
-            <div class="row">
-              <div class="col-12">
-                <h2 class="text-white">We know What Bait to Use</h2>
-                <div class="section-border ml-0"></div>
-              </div>
-              <div class="col-md-6 mb-4">
-                <div class="media">
-                  <i class="icon text-gradient-primary ti-vector mr-3"></i>
-                  <div class="media-body">
-                    <h4 class="text-white">User Experience</h4>
-                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-4">
-                <div class="media">
-                  <i class="icon text-gradient-primary ti-layout mr-3"></i>
-                  <div class="media-body">
-                    <h4 class="text-white">Responsive Layout</h4>
-                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-4">
-                <div class="media">
-                  <i class="icon text-gradient-primary ti-headphone-alt mr-3"></i>
-                  <div class="media-body">
-                    <h4 class="text-white">Digital Solutions</h4>
-                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-4">
-                <div class="media">
-                  <i class="icon text-gradient-primary ti-ruler-pencil mr-3"></i>
-                  <div class="media-body">
-                    <h4 class="text-white">Bootstrap 4x</h4>
-                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /feature -->
-
-<!-- team -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h2>Our Team</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-        <div class="section-border"></div>
-      </div>
-    </div>
-    <div class="row no-gutters">
-      <div class="col-lg-3 col-sm-6">
-        <div class="card hover-shadow">
-          <img src="images/team/member-1.jpg" alt="team-member" class="card-img-top">
-          <div class="card-body text-center position-relative zindex-1">
-            <h4><a class="text-dark" href="team-single.html">Sara Adams</a></h4>
-            <i>Designer</i>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="card hover-shadow">
-          <img src="images/team/member-2.jpg" alt="team-member" class="card-img-top">
-          <div class="card-body text-center position-relative zindex-1">
-            <h4><a class="text-dark" href="team-single.html">Tom Bills</a></h4>
-            <i>Developer</i>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="card hover-shadow">
-          <img src="images/team/member-3.jpg" alt="team-member" class="card-img-top">
-          <div class="card-body text-center position-relative zindex-1">
-            <h4><a class="text-dark" href="team-single.html">Anna Walle</a></h4>
-            <i>Manager</i>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="card hover-shadow">
-          <img src="images/team/member-4.jpg" alt="team-member" class="card-img-top">
-          <div class="card-body text-center">
-            <h4>Devid Json</h4>
-            <i>CEO</i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /team -->
-
-<!-- about -->
-<section class="section-lg position-relative bg-cover" data-background="images/backgrounds/about-bg.jpg">
-  <img src="images/backgrounds/about-bg-overlay.png" alt="overlay" class="overlay-image img-fluid">
-  <div class="container">
-    <div class="row justify-content-between">
-      <div class="col-lg-6 col-md-8 col-sm-7 col-8">
-        <h2 class="text-white mb-4">Who We Are</h2>
-        <p class="text-light mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p>
-        <a href="about.html" class="btn btn-primary">Read More</a>
-      </div>
-      <div class="col-md-2 col-sm-4 col-4 text-right align-self-end">
-        <a class="venobox" data-autoplay="true" data-vbtype="video"
-          href="https://www.youtube.com/watch?v=jrkvirglgaQ"><i
-            class="text-center icon-sm icon-box rounded-circle text-white bg-gradient-primary d-block ti-control-play"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /about -->
-
-<!-- project -->
-<section class="section">
-  <div class="container-fluid px-0">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h2>Our Feature Works</h2>
-        <div class="section-border"></div>
-      </div>
-    </div>
-
-    <div class="row no-gutters shuffle-wrapper">
-      <div class="col-lg-4 col-md-6 shuffle-item">
-        <div class="project-item">
-          <img src="images/project/project-1.jpg" alt="project-image" class="img-fluid w-100">
-          <div class="project-hover bg-secondary px-4 py-3">
-            <a href="#" class="text-white h4">Project title</a>
-            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 shuffle-item">
-        <div class="project-item">
-          <img src="images/project/project-2.jpg" alt="project-image" class="img-fluid w-100">
-          <div class="project-hover bg-secondary px-4 py-3">
-            <a href="#" class="text-white h4">Project title</a>
-            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 shuffle-item">
-        <div class="project-item">
-          <img src="images/project/project-3.jpg" alt="project-image" class="img-fluid w-100">
-          <div class="project-hover bg-secondary px-4 py-3">
-            <a href="#" class="text-white h4">Project title</a>
-            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 shuffle-item">
-        <div class="project-item">
-          <img src="images/project/project-4.jpg" alt="project-image" class="img-fluid w-100">
-          <div class="project-hover bg-secondary px-4 py-3">
-            <a href="#" class="text-white h4">Project title</a>
-            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 shuffle-item">
-        <div class="project-item">
-          <img src="images/project/project-5.jpg" alt="project-image" class="img-fluid w-100">
-          <div class="project-hover bg-secondary px-4 py-3">
-            <a href="#" class="text-white h4">Project title</a>
-            <a href="#"><i class="ti-link icon-xs text-white"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /project -->
-
-<!-- call to action -->
-<section>
-  <div class="container section-sm overlay-secondary-half bg-cover" data-background="images/backgrounds/cta-bg.jpg">
-  <div class="row">
-    <div class="col-lg-8 offset-lg-1">
-      <h2 class="text-gradient-primary">Let's Start With Us!</h2>
-      <p class="h4 font-weight-bold text-white mb-4">Lorem ipsum dolor sit amet, magna habemus ius ad</p>
-      <a href="contact.html" class="btn btn-lg btn-primary">Let’s talk</a>
-    </div>
-  </div>
-</div>
-</section>
-<!-- /call to action -->
-
-<!-- pricing -->
-<section class="section pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h2>Our Smart Pricing Table</h2>
-        <div class="section-border"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <div class="card bottom-shape bg-secondary pt-4 pb-5">
-          <div class="card-body text-center">
-            <h4 class="text-white">Basic</h4>
-            <p class="text-light mb-4">Besic and simple website</p>
-            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
-            <ul class="list-unstyled mb-5">
-              <li class="text-white mb-3">Mobile-Optimized Website</li>
-              <li class="text-white mb-3">Powerful Website Metrics</li>
-              <li class="text-white mb-3">Free Custom Domain</li>
-              <li class="text-white mb-3">24/7 Customer Support</li>
-              <li class="text-white mb-3">Fully Integrated E-Cormmerce</li>
-              <li class="text-white mb-3">Sell unlimited Product</li>
-            </ul>
-            <a href="#" class="btn btn-outline-light">Try it now</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <div class="card bottom-shape bg-secondary pt-4 pb-5">
-          <div class="card-body text-center">
-            <h4 class="text-white">Basic</h4>
-            <p class="text-light mb-4">Besic and simple website</p>
-            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
-            <ul class="list-unstyled mb-5">
-              <li class="text-white mb-3">Mobile-Optimized Website</li>
-              <li class="text-white mb-3">Powerful Website Metrics</li>
-              <li class="text-white mb-3">Free Custom Domain</li>
-              <li class="text-white mb-3">24/7 Customer Support</li>
-              <li class="text-white mb-3">Fully Integrated E-Cormmerce</li>
-              <li class="text-white mb-3">Sell unlimited Product</li>
-            </ul>
-            <a href="#" class="btn btn-outline-light">Try it now</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <div class="card bottom-shape bg-secondary pt-4 pb-5">
-          <div class="card-body text-center">
-            <h4 class="text-white">Basic</h4>
-            <p class="text-light mb-4">Besic and simple website</p>
-            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
-            <ul class="list-unstyled mb-5">
-              <li class="text-white mb-3">Mobile-Optimized Website</li>
-              <li class="text-white mb-3">Powerful Website Metrics</li>
-              <li class="text-white mb-3">Free Custom Domain</li>
-              <li class="text-white mb-3">24/7 Customer Support</li>
-              <li class="text-white mb-3">Fully Integrated E-Cormmerce</li>
-              <li class="text-white mb-3">Sell unlimited Product</li>
-            </ul>
-            <a href="#" class="btn btn-outline-light">Try it now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /pricing -->
-
-<!-- blog -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h2>Latest News</h2>
-        <div class="section-border"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-        <article class="card">
-          <img src="images/blog/post-1.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="#" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-        <article class="card">
-          <img src="images/blog/post-2.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="#" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-        <article class="card">
-          <img src="images/blog/post-3.jpg" alt="post-thumb" class="card-img-top mb-2">
-          <div class="card-body p-0">
-            <time>January 15, 2018</time>
-            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
-              Book Covers Reflect the Design</a>
-            <a href="#" class="btn btn-transparent">Read more</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /blog -->
-
-<!-- footer -->
-<footer class="bg-secondary position-relative">
-  <img src="images/backgrounds/map.png" class="img-fluid overlay-image" alt="">
-  <div class="section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-3 col-6">
-          <h4 class="text-white mb-5">About</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light d-block mb-3">Service</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Conatact</a></li>
-            <li><a href="#" class="text-light d-block mb-3">About us</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Blog</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Support</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-6">
-          <h4 class="text-white mb-5">Company</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light d-block mb-3">Service</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Conatact</a></li>
-            <li><a href="#" class="text-light d-block mb-3">About us</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Blog</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Support</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <div class="bg-white p-4">
-            <h3>Contact us</h3>
-            <form action="#">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Full name">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Email address">
-              <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
-              <button class="btn btn-primary" type="submit">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pb-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-left">
-          <p class="text-light mb-0">Copyright &copy; 2019 a theme by <a class="text-gradient-primary" href="https://themefisher.com">themefisher.com</a>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <ul class="list-inline text-md-right text-center">
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-facebook"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-twitter-alt"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-instagram"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-github"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- /footer -->
-
-<!-- jQuery -->
-<script src="{{ asset('template/sourceplugins/jQuery/jquery.min.js') }}"></script>
-<!-- Bootstrap JS -->
-<script src="{{ asset('template/sourceplugins/bootstrap/bootstrap.min.js') }}"></script>
-<!-- slick slider -->
-<script src="{{ asset('template/sourceplugins/slick/slick.min.js') }}"></script>
-<!-- venobox -->
-<script src="{{ asset('template/sourceplugins/venobox/venobox.min.js') }}"></script>
-<!-- shuffle -->
-<script src="{{ asset('template/source/plugins/shuffle/shuffle.min.js') }}"></script>
-<!-- apear js -->
-<script src="{{ asset('template/source/plugins/counto/apear.js') }}"></script>
-<!-- counter -->
-<script src="{{ asset('template/source/plugins/counto/counTo.js') }}"></script>
-<!-- card slider -->
-<script src="{{ asset('template/source/plugins/card-slider/js/card-slider-min.js') }}"></script>
-<!-- google map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-<script src="{{ asset('template/source/plugins/google-map/gmap.js') }}"></script>
-
-<!-- Main Script -->
-<script src="{{ asset('template/source/js/script.js') }}"></script>
-
-</body>
+        <!-- Scripts -->
+        <script src="{{ asset('cedo/web/js/jquery.min.js') }}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+        <script src="{{ asset('cedo/web/js/bootstrap.min.js') }}"></script> <!-- Bootstrap framework -->
+        <script src="{{ asset('cedo/web/js/jquery.easing.min.js') }}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="{{ asset('cedo/web/js/swiper.min.js') }}"></script> <!-- Swiper for image and text sliders -->
+        <script src="{{ asset('cedo/web/js/jquery.magnific-popup.js') }}"></script> <!-- Magnific Popup for lightboxes -->
+        <script src="{{ asset('cedo/web/js/scripts.js') }}"></script> <!-- Custom scripts -->
+    </body>
 </html>

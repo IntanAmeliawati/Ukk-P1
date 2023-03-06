@@ -40,7 +40,7 @@
               <i class="fas fa-times"></i>
             </button>
           </div>
-      <h3 class="card-title">Data Kelas</h3>
+      <h3 class="card-title">Data Transaksi</h3>
     </div>
     <!-- /.card-header -->
     <div class="card-body">

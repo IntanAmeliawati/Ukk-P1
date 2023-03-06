@@ -6,7 +6,6 @@ use App\Models\Siswa;
 use App\Models\Kelas;
 use App\Models\Spp;
 use App\Models\Pembayaran;
-use App\Models\User;
 use Illuminate\Http\Request;
 
 class SiswaController extends Controller
@@ -42,7 +41,7 @@ class SiswaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,Spp $spp,Pembayaran $pembayaran)
     {
         //
         $request->validate([
@@ -50,7 +49,7 @@ class SiswaController extends Controller
             'nis' => 'required|max:8',
             'nama' => 'required',
             'alamat' => 'required',
-            'no_tlp' => 'required',
+            'no_telp' => 'required',
             'kelas_id' => 'required',
             'spps_id' => 'required'
         ],[
@@ -67,8 +66,9 @@ class SiswaController extends Controller
             'nis' => $request -> nis,
             'nama' => $request -> nama,
             'alamat' => $request -> alamat,
-            'no_tlp' => $request -> no_telp,
+            'no_telp' => $request -> no_telp,
             'kelas_id' => $request -> kelas_id,
+            'spps_id'   => $request->spps_id,
             $pembayaran->spp_id  = $request->spp_id
         ]);
         $idspp = $spp->id;
@@ -127,7 +127,7 @@ class SiswaController extends Controller
         $siswa->nis = $request->nis;
         $siswa->nama = $request->nama;
         $siswa->alamat = $request->alamat;
-        $siswa->no_telp = $request->no_tlp;
+        $siswa->no_telp = $request->no_telp;
         $siswa->kelas_id = $request->kelas_id;
         $siswa->spps_id = $request->spps_id;
         $siswa->update();
