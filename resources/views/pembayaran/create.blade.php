@@ -3,7 +3,7 @@
 @section('judul')
     <h1>Tambah Pembayaran</h1>
 @endsection
-c
+
 @section ('content')
 <div class="card card-primary">
               <div class="card-header">
@@ -15,11 +15,11 @@ c
               <form action="{{ route('pembayaran.store', $siswas->id) }}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label for="input_nis">NamaSiswa</label>
+                    <label for="input_nis">Nama Siswa</label>
                     <input type="tex" class="form-control" id="inputnis" value="{{$siswas->nama }}" disabled>
                   </div>
                   <div class="form-group">
-                    <label for="input_nis">tgl_bayar</label>
+                    <label for="input_nis">Tanggal bayar</label>
                     <input type="date" name="tgl_bayar" class="form-control" id="inputnis">
                   </div>
                   <div class="form-group">
@@ -30,8 +30,14 @@ c
                     <option value="Februari">Februari</option>
                     <option value="Maret">Maret</option>
                     <option value="April">April</option>
-                    <option value="mei">Mei</option>
-                    <option value="juni">Juni</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Juni">Juni</option>
+                    <option value="Agustus">Juli</option>
+                    <option value="Agustus">Agustus</option>
+                    <option value="September">September</option>
+                    <option value="Oktober">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="Desember">Desember</option>
                  </select>
                   </div>
                    <div class="form-group">
@@ -47,7 +53,7 @@ c
                   
                   </div>
                   <div class="form-group">
-                    <label for="inputno_telp">jumlah dibayar</label>
+                    <label for="inputno_telp">Jumlah dibayar</label>
                     <input type="number" name="jumlah_dibayar" class="form-control" id="inputno_telp">
                   </div>
                  

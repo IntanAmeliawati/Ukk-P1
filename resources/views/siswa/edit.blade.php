@@ -3,7 +3,7 @@
 @section('judul')
     <h1>Tambah Pembayaran</h1>
 @endsection
-c
+
 @section ('content')
 <div class="card card-primary">
               <div class="card-header">
@@ -32,6 +32,12 @@ c
                     <option value="April">April</option>
                     <option value="mei">Mei</option>
                     <option value="juni">Juni</option>
+                    <option value="Agustus">Juli</option>
+                    <option value="Agustus">Agustus</option>
+                    <option value="September">September</option>
+                    <option value="Oktober">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="Desember">Desember</option>
                  </select>
                   </div>
                    <div class="form-group">
